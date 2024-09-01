@@ -22,9 +22,10 @@ func main() {
 	r.PUT("/products/:id", controllers.UpdateProduct)
 	r.DELETE("/products/:id", controllers.DeleteProduct)
 
+	// Auth routes
 	r.POST("/register", controllers.Register)
 	r.POST("/login", controllers.Login)
-	// Auth routes
+	
 
 	r.Run()
 
